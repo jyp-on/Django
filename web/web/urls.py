@@ -20,7 +20,7 @@ from catalog import views
 
 
 urlpatterns = [
-    path('', views.index, name='view.index'),
+    path('', views.post_list, name='view.index'),
     # path('lol/', views.lol, name='view.index'),
     path('admin/', admin.site.urls),
     # path('write/', templates/write),
