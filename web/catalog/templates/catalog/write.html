@@ -1,0 +1,85 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+    <h1><a href="{% url 'write_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+    <span id="button" style="float: left">
+    <p class="a">Color toggle</p>
+    <p class="b" hidden>marin</p>
+    <p class="c" hidden>green-sian</p>
+</span>
+<a sytle="font-size:10px;" href="animate.html">animate 실습</a>
+
+<h1><a href="lol.html" id="main">Legue of Legend</a></h1>
+<a href="signup.html"><button>회원가입</button></a>
+<form div id="login" onsubmit="return validate();">
+    <div style="text-align:right" method="post">
+        <p>
+            <label for="id_txt"><strong>ID</strong></label>
+            <input id="id" type="text" name="id">
+            <br>
+            <label for="password"><strong>PASSWORD</strong></label>
+            <input id="pw" type="password" name="pwd">
+            <br>
+            <input type="submit">
+        </p>
+
+
+
+    </div>
+</form>
+
+
+<section class="container">
+    <nav>
+        <ul>
+            <li class="nav" style="font-size:4rem">목차</li>
+            <li class="top" hidden><a href="top.html">탑</a></li>
+            <li class="mid" hidden><a href="mid.html">미드</a></li>
+            <li class="jungle" hidden><a href="jungle.html">정글</a></li>
+            <li class="ad" hidden><a href="ad.html">원딜</a></li>
+            <li class="sup" hidden><a href="sup.html">서폿</a></li>
+        </ul>
+    </nav>
+    <main>
+        <strong>MADMOVIE</strong>
+        <br>
+        <strong>각 라인마다 1티어상위 챔피언두명의 매드무비 영상을 볼수있습니다.</strong>
+        <br>
+        6월27일기준<br>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/FeIG65IRnkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table text-align="center">
+            <tr>
+                <th>롤토체스 템조합</th>
+                <td><img src="lol.lolto.jpeg" alt=""></td>
+            </tr>
+        </table>
+        <br>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla t nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.r. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate vr. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate v
+
+    </main>
+    <aside>
+        <br><br>
+        <strong text-align="center">
+            (광고배너)
+        </strong>
+        <br><br><br>
+        <div id="ad">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis cepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </aside>
+</section>
+<footer>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor uis nostrud Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</footer>
+<div id="fow">
+    <a href="http://fow.kr/" class="fow" style="text-decoration:none">FOW</a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="lol.js"></script>
+
+
+{% endblock %}

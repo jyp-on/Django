@@ -20,8 +20,8 @@ from catalog import views
 
 
 urlpatterns = [
-    path('', views.post_list, name='view.index'),
-    # path('lol/', views.lol, name='view.index'),
+    path('', views.post_list, name='lol'),
+    path('post/<int:pk>/', views.post_detail, name='write_detail'),
     path('admin/', admin.site.urls),
-    # path('write/', templates/write),
+
 ]
