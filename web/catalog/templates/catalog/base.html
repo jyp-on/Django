@@ -3,32 +3,35 @@
 <html>
 
 <head>
-    <title>League of Legend</title>
-    <meta charset="utf-8">
-    <meta name="juyoung">
-    <link rel="stylesheet" href="{% static 'css/catalog.css' %}">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142870976-1">
-        < script >
-            window.dataLayer = window.dataLayer || [];
+  <title>League of Legend</title>
+  <meta charset="utf-8">
+  <meta name="juyoung">
+  <link rel="stylesheet" href="{% static 'css/catalog.css' %}">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142870976-1">
+    < script >
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-142870976-1');
+    gtag('config', 'UA-142870976-1');
+  </script>
 
-    </script>
-
-    <meta name="viewport" content="width=divice-width,initial-scale=2.0">
+  <meta name="viewport" content="width=divice-width,initial-scale=2.0">
 
 
-    <style media="screen">
-    </style>
+  <style media="screen">
+  </style>
 </head>
 
 <body bgcolor="#E6E6E6">
+  <div class="page-header">
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <h1><a href="/">Django Girls Blog</a></h1>
+  </div>
   {% block content %}
   {% endblock %}
 </body>
